@@ -1,0 +1,61 @@
+
+body{
+  margin: 0px;
+        padding: 0px;
+}
+#title{background-color:black;
+  color: white;
+  margin: 0px;
+  display: flex;
+}
+.fly{
+  padding-right: 30px;margin-left: 400px;
+  font-size: 50px;
+}
+.two{
+  background-color: grey;
+  border-left:9px solid green;
+  padding: 10px;
+  margin: 80px;
+}
+button{
+  background-image: linear-gradient(to right,rgb(66, 65, 65),rgb(0, 0, 0));
+  color: aliceblue;
+  border-radius: 10px;
+  padding: 10px;
+  opacity: 1;
+  transition-duration: 0.3s;
+  margin-bottom: 5px;
+}
+button:hover{
+  opacity: 0.6;
+  box-shadow: black;
+}
+table {
+
+  font-family: 'Times New Roman', Times, serif;
+  width:100%;
+  border-collapse: collapse;
+
+
+
+}
+p{
+  text-indent: 20px;
+}
+  th,td{
+
+
+  text-align: left;
+  padding: 8px;
+
+  }
+  th{
+      background-color: rgb(94, 185, 3);
+      color: white;
+
+  }
+  td{
+      color: black;
+
+  }

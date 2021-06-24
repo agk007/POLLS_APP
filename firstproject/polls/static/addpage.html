@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="index.css">
+          <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+       <script src="/static/addpage.js"></script>
+
+
+        <title>page4</title>
+    </head>
+        <body>
+        <div id="title">
+            <h2 style="margin: 20px;padding: 20px;letter-spacing: 10px;">CreatePoll</h2>
+
+
+            <h1 class="fly" >FlyWeight Polls</h1>
+        </div>
+            <br>
+
+            <h3><b>Question</b></h3>
+            <input type="question" id="question" placeholder="Type your poll question here
+            " style="width: 500px;">
+            <br>
+            <h3>Answer Options</h3>
+            <input type="option" placeholder="option1" id="choice1" style="width: 500px;"><br><br>
+            <div id="inputFormRow">
+                        <div class="input-group mb-3">
+
+            <input type="option" placeholder="option2" id="choice2" style="width: 500px;">
+                        </div>
+            </div>
+            <br>
+            <div id="newRow"></div>
+            <br>
+            <button id="addRow" type="button" class="btn btn-info">Add Option</button>
+            <br>
+            <h3>Comma separated tags</h3>
+            <input type="tags" placeholder="tag1,tag2,tag3" id="tag" style="width: 500px;">
+            <br><br>
+            <button id="submit">create Poll</button>
+
+
+
+        </body>
+
+</html>

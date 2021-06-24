@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Get Selected Checkboxes Value Using jQuery</title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script type="text/javascript">
+    $(document).ready(function() {
+        $(".btn").click(function() {
+            var colors = [];
+            $.each($("input[name='color']:checked"), function() {
+                colors.push($(this).val());
+            });
+            alert("My favourite colors are: " + colors.join(", "));
+        });
+    });
+</script>
+</head>
+<body>
+    <form method="POST">
+    <h3>Select your favorite colors:</h3>
+    <div class="checkbox"><label><input type="checkbox" value="red" name="color"> Red</label></div>
+    <div class="checkbox"><label><input type="checkbox" value="orange" name="color"> Orange</label></div>
+    <div class="checkbox"><label><input type="checkbox" value="yellow" name="color"> Yellow</label></div>
+    <div class="checkbox"><label><input type="checkbox" value="green" name="color"> Green</label></div>
+    <div class="checkbox"><label><input type="checkbox" value="blue" name="color"> Blue</label></div>
+    <div class="checkbox"><label><input type="checkbox" value="purple" name="color"> Purple</label></div>
+    <br>
+    <button type="button" class="btn">Get Values</button>
+</form>
+</body>
+</html>
